@@ -11,6 +11,10 @@ import android.widget.LinearLayout;
 import android.widget.TimePicker;
 import android.widget.Toast;
 import android.app.AlertDialog;
+import android.content.Intent;
+
+
+
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -21,7 +25,7 @@ public class CalendarDetailActivity extends AppCompatActivity
     private EditText eventTitleEditText, eventInstructorEditText, eventSectionEditText,
             eventLocationEditText;
     private LinearLayout eventDaySelection;
-    private Button deleteButton, eventTimeButton;
+    private Button deleteButton, eventTimeButton, settingsButton;
     private Course selectedEvent;
     private String selectedTime;
 
@@ -42,8 +46,17 @@ public class CalendarDetailActivity extends AppCompatActivity
                 System.out.println("eventTime pressed");
             }
         });
+        settingsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(CalendarDetailActivity.this, SettingsActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
+
+
 
     private void initEventWidgets()
     {

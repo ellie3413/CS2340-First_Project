@@ -1,6 +1,7 @@
 package com.example.cs2340_first_project;
 // SettingsActivity.java
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,6 +9,12 @@ import androidx.appcompat.app.AppCompatActivity;
 public class SettingsActivity extends AppCompatActivity {
     private SeekBar notificationSizeSeekBar;
     private TextView notificationSizeTextView;
+
+    private Button Settings;
+
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
