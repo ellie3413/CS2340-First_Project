@@ -46,13 +46,6 @@ public class CalendarDetailActivity extends AppCompatActivity
                 System.out.println("eventTime pressed");
             }
         });
-        settingsButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(CalendarDetailActivity.this, SettingsActivity.class);
-                startActivity(intent);
-            }
-        });
 
     }
 
